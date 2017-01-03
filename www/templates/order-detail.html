@@ -1,0 +1,20 @@
+<ion-view view-title="Order-Details">
+  <ion-content class="padding">
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="img/adam.jpg">
+        <h2>{{order.OrderID}}</h2>
+        <h3>{{order.customerName}}</h3>
+        <p>Amount : {{order.amount}}</p>
+      </div>
+
+    </div>
+    <a class="button button-full button-calm" href="#/app/order-update/{{order._id}}">
+      Update Order
+    </a>
+    <button class="button button-full button-assertive" ng-click="deleteOrder(order._id)">
+      Delete Order
+    </button>
+  </ion-content>
+</ion-view>

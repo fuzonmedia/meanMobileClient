@@ -1,0 +1,20 @@
+<ion-view view-title="Orders">
+  <ion-nav-buttons side="right">
+    <a class="button" href="#/app/orders-new">New</a>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <ion-list>
+      <div  ng-repeat="(index, order) in orders">
+        <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" href="#/app/orders/{{order._id}}">
+          <img src="img/adam.jpg">
+          <h2>{{order.OrderID}}</h2>
+          <p>{{order.customerName}}</p>
+          <h3>Amount : {{order.amount}}</h3>
+          <ion-option-button class="button-assertive" ng-click="deleteOrder(order._id,index)">
+            Delete
+          </ion-option-button>
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

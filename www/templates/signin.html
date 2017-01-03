@@ -1,0 +1,26 @@
+<ion-view cache-view="false" name="signin-view" view-title="Signin">
+  <ion-content class="background-primary padding">
+    <div class="row" style="padding: 0px 0px 8px 0px; text-align: center;"> <!-- 24px 0px 56px 0px -->
+      <div class="col"><img src="img/project_white.png" height="64px"/></div>
+    </div>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" placeholder="Username" ng-model="user.username" ng-init="user.username=''">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Password" ng-model="user.password" ng-init="user.password=''">
+      </label>
+    </div>
+    <div class="row" style="padding: 8px 0px;">
+      <div class="col"><a class="button button-balanced button-large button-block accept" ng-click="userLogin();">Sign
+        In</a></div>
+      </div>
+      <div class="row" style="padding-bottom: 8px">
+        <div class="col align-center">
+          <a class="light" href="#/register">
+            Need an account? Sign Up
+          </a>
+        </div>
+      </div>
+    </ion-content>
+  </ion-view>

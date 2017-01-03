@@ -1,0 +1,50 @@
+<ion-view cache-view="false" name="register-view" view-title="Register">
+  <ion-content class="background-primary padding">
+    <div class="row align-center padding-vertical-s">
+      <div class="col">
+        <img src="img/project_white.png" height="64px"/>
+      </div>
+    </div>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" placeholder="Enter Name" ng-model="user.name" ng-init="user.name=''">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Enter username" ng-model="user.username" ng-init="user.username=''">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Password" ng-model="user.password" ng-init="user.password=''">
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Country
+        </div>
+        <select ng-model="user.country"  ng-init="user.country=''">
+          <option value="" selected="selected">Select Country</option>
+          <option value="India">India</option>
+          <option value="Russia">Russia</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select>
+      </label>
+    </div>
+    <div class="terms-container">
+      By registering, you confirm you have read our <a href="#">User Agreement</a>.
+    </div>
+    <div class="row padding-horizontal-s">
+      <div class="col">
+        <a class="button button-balanced button-large button-block accept"
+        ng-click="Register()">
+        Register
+      </a>
+    </div>
+  </div>
+  <div class="row padding-horizontal-s">
+    <div class="col align-center">
+      <a class="color-white clickable" href="#/signin">
+        Have an account? Sign In
+      </a>
+    </div>
+  </div>
+</ion-content>
+</ion-view>

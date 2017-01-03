@@ -1,0 +1,14 @@
+/* Empty. Add your own CSS if you like */
+
+.background-primary {
+    background: #49b5e7 !important;
+    border-color: #49b5e7 !important;
+
+    color: white !important;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.36);
+}
+
+.background-primary > * {
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.36);
+}
